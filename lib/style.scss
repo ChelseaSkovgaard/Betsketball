@@ -1,0 +1,33 @@
+@import 'reset.scss';
+@import 'variables.scss';
+
+
+.header {
+  background-color: $dark-background;
+  position: fixed;
+
+    h1 {
+      font-size: 40px;
+      color: $highlight-color-one;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+}
+
+nav {
+  margin: auto;
+  width: 200px;
+  padding-bottom: 20px;
+
+  button {
+    background-color: $highlight-color-one;
+    color: $dark-background;
+    border: none;
+    border-radius: 5%;
+    margin: auto;
+    margin-left: 10px;
+
+  }
+}
