@@ -128,3 +128,21 @@ nav {
     background-color: $highlight-color-one;
   }
 }
+
+//Wallet Page
+.wallet-page {
+  background-color: $lighter-background;
+  color: white;
+    section{
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 2%;
+    }
+    h2 {
+      padding-bottom: 10px;
+      font-size: 30px;
+    }
+    h3 {
+      padding-bottom: 10px;
+    }
+}
