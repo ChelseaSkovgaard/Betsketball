@@ -1,33 +1,50 @@
 @import 'reset.scss';
 @import 'variables.scss';
 
+body {
+  font-size: 20px;
+}
 
 .header {
   background-color: $dark-background;
-  position: fixed;
+  width: 100%;
+  border-bottom: $highlight-color-one 5px solid;
 
     h1 {
-      font-size: 40px;
       color: $highlight-color-one;
+      font-family: $header-font;
+      font-size: 40px;
       font-weight: bold;
-      text-align: center;
-      margin-bottom: 20px;
+      margin-left: 10%;
+      padding: 2% 0;
     }
 
 }
 
 nav {
-  margin: auto;
-  width: 200px;
-  padding-bottom: 20px;
+  margin-left: 10%;
 
   button {
-    background-color: $highlight-color-one;
-    color: $dark-background;
+    color: $highlight-color-one;
+    background-color: transparent;
     border: none;
-    border-radius: 5%;
-    margin: auto;
-    margin-left: 10px;
+    border: solid $highlight-color-one 2px;
+    padding: 10px 30px;
+    font-size: 25px;
+    &:hover {
+      background-color: $highlight-color-one;
+      color: $dark-background;
+    }
+}
+}
 
-  }
+.sign-out {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 5%;
 }
