@@ -7,6 +7,43 @@ body {
   background-color: $lighter-background;
 }
 
+//SIGN IN PAGE
+
+.sign-in-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: $highlight-color-one;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 15%;
+  }
+  h2 {
+    font-size: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    color: $hightlight-color-two;
+    text-align: center;
+  }
+  button {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    background-color: #27ae60;
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: $button-radius;
+  }
+}
+
+
+//HEADER
 .header {
   background-color: $dark-background;
   width: 100%;
@@ -41,14 +78,14 @@ nav {
 }
 
 .sign-out {
-  position: absolute;
-  right: 2%;
-  top: 5%;
-  background-color: #c0392b;
   color: white;
   border: none;
   font-size: 20px;
   border-radius: $button-radius;
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  background-color: #c0392b;
 }
 
 //HOME PAGE
@@ -75,6 +112,7 @@ nav {
   border: none;
   padding: 10px;
   font-size: 15px;
+  border-radius: $button-radius;
 }
 
 .submit-budget {
