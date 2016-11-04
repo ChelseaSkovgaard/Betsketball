@@ -58,7 +58,6 @@ body {
       margin-left: 10%;
       padding: 2% 0;
     }
-
 }
 
 nav {
@@ -146,4 +145,49 @@ nav {
     h3 {
       padding-bottom: 10px;
     }
+}
+
+//Game Page
+div.game {
+  border-bottom: $hightlight-color-two solid 3px;
+}
+.date-time {
+  padding-top: 10px;
+}
+
+.bet-input {
+  margin-left: 10px;
+  font-size: 20px;
+  input {
+    border: none;
+    font-size: 16px;
+  }
+  button {
+    margin-left: 10px;
+    border-radius: $button-radius;
+    background-color: $hightlight-color-two;
+    border: none;
+    font-size: 16px;
+    &:hover {
+      background-color: $highlight-color-one;
+    }
+  }
+}
+
+.game-schedule-header  {
+  font-size: 30px;
+  padding: 10px 0;
+}
+div li {
+  padding-bottom: 10px;
+}
+
+.game-page {
+  margin-left: 10%;
+}
+
+h2.away-team, h2.home-team {
+  display: inline-block;
+  color: $highlight-color-one;
+  font-size: 22px;
 }
