@@ -191,3 +191,13 @@ h2.away-team, h2.home-team {
   color: $highlight-color-one;
   font-size: 22px;
 }
+
+//getTodayGames
+
+.active {
+  color: red;
+}
+
+.activeGame {
+  background-color: teal;
+}
