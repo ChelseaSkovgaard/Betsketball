@@ -42,8 +42,6 @@ button {
     background-color: $select-button-color;
     font-size: 30px;
     color: white;
-    border: none;
-    border-radius: $button-radius;
   }
 }
 
@@ -70,7 +68,7 @@ nav {
   button {
     color: $highlight-color-one;
     background-color: transparent;
-    border: none;
+    border-radius: 0%;
     border: solid $highlight-color-one 2px;
     padding: 10px 30px;
     font-size: 25px;
@@ -83,9 +81,7 @@ nav {
 
 .sign-out {
   color: white;
-  border: none;
   font-size: 20px;
-  border-radius: $button-radius;
   position: absolute;
   right: 2%;
   top: 5%;
@@ -113,15 +109,11 @@ nav {
 
 .budget-field {
   margin-left: 10%;
-  border: none;
   padding: 10px;
   font-size: 15px;
-  border-radius: $button-radius;
 }
 
 .submit-budget {
-  border-radius: $button-radius;
-  border: none;
   margin-left: 20px;
   background-color: $hightlight-color-two;
   color: $dark-background;
@@ -168,14 +160,12 @@ section.game {
   margin-left: 10px;
   font-size: 20px;
   input {
-    border: none;
+    border: solid $dark-background 3px;
     font-size: 20px;
   }
   button {
     margin-left: 10px;
-    border-radius: $button-radius;
     background-color: $hightlight-color-two;
-    border: none;
     font-size: 20px;
     &:hover {
       background-color: $highlight-color-one;
@@ -209,14 +199,9 @@ button.away-team, button.home-team {
   }
 }
 
-.bet-input input {
-  border: solid $dark-background 3px;
-}
-
 button.active {
   background-color: $dark-background;
   color: white;
-  border: none;
   font-size: 26px;
 }
 
