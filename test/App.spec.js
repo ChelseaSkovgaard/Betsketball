@@ -1,9 +1,4 @@
-// shallow is unit tests
-//skeleton tests
 
-//mount: goto for functionality
-//able to test api data
-//feature tests
 import React from 'react'
 
 import { shallow, mount, render } from 'enzyme'
@@ -12,7 +7,7 @@ import App from '../lib/components/app'
 const sinon = require('sinon')
 
 
-describe('Unit Test | Application', () => {
+describe('Application', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<App />)
   })

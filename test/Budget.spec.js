@@ -5,7 +5,7 @@ import { assert, expect } from 'chai'
 import Budget from '../lib/components/budget'
 
 
-describe('Unit Test | Budget', () => {
+describe('Budget', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<Budget />)
   })
