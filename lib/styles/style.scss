@@ -155,8 +155,13 @@ nav {
 section.game {
   border-bottom: $hightlight-color-two solid 3px;
 }
-.date-time {
+.date-time{
   padding-top: 10px;
+  padding-left: 10px;
+}
+
+.game-location {
+  padding-left: 10px;
 }
 
 .bet-input {
@@ -173,8 +178,8 @@ section.game {
     border: none;
     font-size: 20px;
     &:hover {
-      background-color: $dark-background;
-      color: $highlight-color-one;
+      background-color: $highlight-color-one;
+      color: $dark-background;
     }
   }
 }
@@ -197,10 +202,16 @@ button.away-team, button.home-team {
   border: solid 2px white;
   color: $highlight-color-one;
   font-size: 20px;
-  margin: 5px;
+  margin: 5px 5px 5px 10px;
+  &:hover {
+    background-color: $highlight-color-one;
+    color: $dark-background;
+  }
 }
 
-//getTodayGames
+.bet-input input {
+  border: solid $dark-background 3px;
+}
 
 button.active {
   background-color: $dark-background;
@@ -210,6 +221,8 @@ button.active {
 }
 
 .activeGame {
-  background-color: $highlight-color-one;
+  background-color: white;
+  border-bottom: none;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   color: $dark-background;
 }
