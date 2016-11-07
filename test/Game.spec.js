@@ -34,10 +34,45 @@ describe('Unit Test | Game', () => {
   })
   it('should run the submitWager function on button click', function(){
     let submitWager = sinon.spy()
-    let saveBet = ()=>{
+    let saveBet= ()=>{
     }
     const wrapper = mount(<Game saveBet={saveBet} game={game} submitWager={submitWager} />)
        wrapper.find('.submit-wager').simulate('click')
-       expect(submitWager.calledOnce).to.equal(true)
+       setTimeout(()=> {
+        expect(submitWager.calledOnce).to.equal(true)
+      },1000)
+  })
+  it('should be able to choose Home team', ()=>{
+    let selectTeam = sinon.spy();
+    let saveTeam = sinon.spy();
+    const wrapper = mount(<Game game={game} selectTeamHome={selectTeam} saveTeam={saveTeam} />);
+    wrapper.find('.home-team').simulate('click');
+    expect(wrapper.state().activeHome).to.equal(true)
+  })
+  it('should be able to choose Away team', ()=>{
+    let selectTeam = sinon.spy();
+    let saveTeam = sinon.spy();
+    const wrapper = mount(<Game game={game} selectTeamAway={selectTeam} saveTeam={saveTeam} />);
+    wrapper.find('.away-team').simulate('click');
+    expect(wrapper.state().activeAway).to.equal(true)
+  })
+  it('should unselect game when submit button is clicked', function(){
+    let submitWager = sinon.spy()
+    let saveBet= ()=>{
+    }
+    const wrapper = mount(<Game saveBet={saveBet} game={game} submitWager={submitWager} />)
+      wrapper.find('.submit-wager').simulate('click')
+    expect(wrapper.state().activeGame).to.equal(false)
+  })
+  it('should unselect game when submit button is clicked', function(){
+    let submitWager = sinon.spy()
+    let submitMessage= sinon.spy()
+    let saveBet= ()=>{
+    }
+    const wrapper = mount(<Game submittedWagerMessage={submitMessage} saveBet={saveBet} game={game} submitWager={submitWager} />)
+      wrapper.find('.submit-wager').simulate('click')
+    setTimeout(()=> {
+      expect(wrapper.state().message).to.equal('Your bet has been successfully submitted!')
+    },1000)
   })
 })

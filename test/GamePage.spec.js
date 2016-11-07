@@ -13,4 +13,7 @@ describe('Unit Test | GamePage', () => {
     const wrapper = render(<GamePage />)
     assert.equal(wrapper.find('.games-list').length, 1)
   })
+  it('should have a component of Game', ()=>{
+    const wrapper = 
+  })
 })
