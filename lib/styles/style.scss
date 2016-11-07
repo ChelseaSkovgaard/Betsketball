@@ -7,6 +7,10 @@ body {
   background-color: $lighter-background;
   color: white;
 }
+button {
+  border: none;
+  border-radius: $button-radius;
+}
 
 //SIGN IN PAGE
 
@@ -35,7 +39,7 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;
-    background-color: #27ae60;
+    background-color: $select-button-color;
     font-size: 30px;
     color: white;
     border: none;
@@ -160,16 +164,17 @@ div.game {
   font-size: 20px;
   input {
     border: none;
-    font-size: 16px;
+    font-size: 20px;
   }
   button {
     margin-left: 10px;
     border-radius: $button-radius;
     background-color: $hightlight-color-two;
     border: none;
-    font-size: 16px;
+    font-size: 20px;
     &:hover {
-      background-color: $highlight-color-one;
+      background-color: $dark-background;
+      color: $highlight-color-one;
     }
   }
 }
@@ -186,18 +191,24 @@ div li {
   margin-left: 10%;
 }
 
-h2.away-team, h2.home-team {
+button.away-team, button.home-team {
   display: inline-block;
+  background-color: transparent;
   color: $highlight-color-one;
-  font-size: 22px;
+  font-size: 20px;
+  margin: 5px;
 }
 
 //getTodayGames
 
-.active {
-  color: red;
+button.active {
+  background-color: $dark-background;
+  color: white;
+  border: none;
+  font-size: 20px;
 }
 
 .activeGame {
-  background-color: teal;
+  background-color: $highlight-color-one;
+  color: $dark-background;
 }
