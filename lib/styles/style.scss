@@ -141,6 +141,30 @@ nav {
     h3 {
       padding-bottom: 10px;
     }
+    #pending-container, #completed-container{
+      display: flex;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      background-color: white;
+      color: $dark-background;
+    }
+    #pending-container {
+      margin-bottom: 20px;
+    }
+    .pending-games, .pending-wagers, .completed-wagers, .completed-games {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      .pending-game, .won, .lost, .pending-wager, .completed-game {
+        height: 100px;
+        text-align: center;
+      }
+    }
+    .won {
+      color: darkgreen;
+    }
+    .lost {
+      color: #c0392b;
+    }
 }
 
 //Game Page
@@ -167,6 +191,9 @@ section.game {
     margin-left: 10px;
     background-color: $hightlight-color-two;
     font-size: 20px;
+    &:hover:disabled {
+      color: grey;
+    }
     &:hover {
       background-color: $highlight-color-one;
       color: $dark-background;
