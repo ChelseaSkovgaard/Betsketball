@@ -6,7 +6,8 @@ module.exports = {
     test: "mocha!./test/index.js"
   },
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
     filename: "[name].bundle.js"
   },
   module: {
@@ -31,4 +32,4 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json', '.scss', '.css']
   }
-}
+};
