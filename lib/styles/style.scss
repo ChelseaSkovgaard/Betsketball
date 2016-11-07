@@ -167,6 +167,9 @@ section.game {
     margin-left: 10px;
     background-color: $hightlight-color-two;
     font-size: 20px;
+    &:hover:disabled {
+      color: grey;
+    }
     &:hover {
       background-color: $highlight-color-one;
       color: $dark-background;
