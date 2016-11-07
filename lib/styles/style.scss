@@ -141,7 +141,8 @@ button {
 }
 
 nav {
-  margin-left: 10%;
+  margin-top: 10px;
+  margin-left: 5%;
 
   button {
     color: $highlight-color-one;
@@ -167,6 +168,31 @@ nav {
 }
 
 //HOME PAGE
+.welcome-message {
+  margin-top: 10px;
+  margin-left: 10%;
+}
+.home-page {
+  margin-bottom: 10px;
+}
+#gamefeed-container{
+  display: flex;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color: $dark-background;
+  color: white;
+  margin-bottom: 10px;
+  h3 {
+    margin-left: 5%;
+  }
+  .completed-wagers, .gamefeed-games {
+    display: flex;
+    flex-direction: column;
+    .won, .lost, .gamefeed-game {
+      height: 100px;
+      text-align: center;
+    }
+  }
+}
 
 .home-page {
   background-color: $lighter-background;
@@ -196,7 +222,7 @@ nav {
   background-color: $hightlight-color-two;
   color: $dark-background;
   padding: 10px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   &:hover {
     background-color: $highlight-color-one;
@@ -219,7 +245,7 @@ nav {
     h3 {
       padding-bottom: 10px;
     }
-    #pending-container, #completed-container{
+    #pending-container, #completed-container {
       display: flex;
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       background-color: white;
