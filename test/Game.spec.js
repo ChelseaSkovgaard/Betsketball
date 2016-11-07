@@ -7,7 +7,7 @@ import stats from './../stats'
 
 const sinon = require('sinon')
 
-describe('Unit Test | Game', () => {
+describe('Game', () => {
   let game = {
   date: "2016-10-27",
   time: "8:00PM",
