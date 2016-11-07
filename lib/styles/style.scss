@@ -193,7 +193,8 @@ div article {
 
 button.away-team, button.home-team {
   display: inline-block;
-  background-color: transparent;
+  background-color: $lighter-background;
+  border: solid 2px white;
   color: $highlight-color-one;
   font-size: 20px;
   margin: 5px;
@@ -205,7 +206,7 @@ button.active {
   background-color: $dark-background;
   color: white;
   border: none;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .activeGame {
