@@ -141,6 +141,30 @@ nav {
     h3 {
       padding-bottom: 10px;
     }
+    #pending-container{
+      display: flex;
+
+    }
+    #completed-container{
+      display: flex;
+    }
+    .pending-games, .pending-wagers, .completed-wagers, .completed-games {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .pending-game, .won, .lost, .pending-wager, .completed-game {
+        height: 100px;
+        text-align: center;
+      }
+    }
+    .won {
+      color: green;
+    }
+    .lost {
+      color: red;
+    }
 }
 
 //Game Page
