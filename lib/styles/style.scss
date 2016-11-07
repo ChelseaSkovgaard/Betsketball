@@ -141,29 +141,29 @@ nav {
     h3 {
       padding-bottom: 10px;
     }
-    #pending-container{
+    #pending-container, #completed-container{
       display: flex;
-
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      background-color: white;
+      color: $dark-background;
     }
-    #completed-container{
-      display: flex;
+    #pending-container {
+      margin-bottom: 20px;
     }
     .pending-games, .pending-wagers, .completed-wagers, .completed-games {
       display: flex;
       width: 50%;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
       .pending-game, .won, .lost, .pending-wager, .completed-game {
         height: 100px;
         text-align: center;
       }
     }
     .won {
-      color: green;
+      color: darkgreen;
     }
     .lost {
-      color: red;
+      color: #c0392b;
     }
 }
 
