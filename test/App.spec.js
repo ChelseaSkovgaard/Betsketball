@@ -11,18 +11,18 @@ describe('Application', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<App />)
   })
-  it('renders as a <div>', () => {
+  it('renders as a <span>', () => {
     const wrapper = shallow(<App />)
-    assert.equal(wrapper.type(), 'div')
+    assert.equal(wrapper.type(), 'span')
   })
   it('can call componentDidMount', () => {
     sinon.spy(App.prototype, 'componentDidMount')
     const wrapper = mount(<App />)
     assert.equal(App.prototype.componentDidMount.calledOnce, true)
   })
-  it('should have onHomePage state of false',()=>{
+  it('should have onHomePage state of true',()=>{
     const wrapper = shallow(<App />)
-    assert.equal(wrapper.state('onHomePage'),(false))
+    assert.equal(wrapper.state('onHomePage'),(true))
   })
   it('should have onWalletPage state of false',()=>{
     const wrapper = shallow(<App />)
