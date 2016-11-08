@@ -27,8 +27,4 @@ describe('GameFeedGame', () => {
   it('can mount with no properties', () => {
     const wrapper = shallow(<GameFeedGame game={game} />)
   })
-  it('it should render  ', function(){
-    const wrapper = render(<GameFeedGame game={game} />)
-    assert.equal(wrapper.find('.gamefeed-game'))
-  })
 })
