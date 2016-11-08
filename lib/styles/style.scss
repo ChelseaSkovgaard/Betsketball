@@ -210,6 +210,9 @@ nav {
       padding-bottom: 10px;
     }
 }
+#deposit {
+  margin-bottom: 10px;
+}
 
 .budget-field {
   margin-left: 10%;
@@ -226,6 +229,9 @@ nav {
   font-weight: bold;
   &:hover {
     background-color: $highlight-color-one;
+  }
+  &:disabled:hover {
+    cursor: not-allowed;
   }
 }
 
