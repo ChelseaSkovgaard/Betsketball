@@ -29,14 +29,16 @@
       flex-direction: column;
       width: 50%;
       .pending-game, .won, .lost, .pending-wager, .completed-game {
-        height: 120px;
+        height: 100px;
         text-align: center;
       }
     }
     .won {
       color: darkgreen;
+      padding-bottom: 0px;
     }
     .lost {
       color: #c0392b;
+      padding-bottom: 0px;
     }
 }
