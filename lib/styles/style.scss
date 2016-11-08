@@ -160,7 +160,7 @@ nav {
 
 .sign-out {
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   position: absolute;
   right: 2%;
   top: 5%;
@@ -172,9 +172,11 @@ nav {
   margin-top: 10px;
   margin-left: 10%;
 }
+
 .home-page {
   margin-bottom: 10px;
 }
+
 #gamefeed-container{
   display: flex;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -194,6 +196,14 @@ nav {
   }
 }
 
+.home article.won {
+  color: #49E20E;
+}
+
+.home article.lost {
+  color: #FF5333;
+}
+
 .home-page {
   background-color: $lighter-background;
   color: white;
@@ -210,6 +220,7 @@ nav {
       padding-bottom: 10px;
     }
 }
+
 #deposit {
   margin-bottom: 10px;
 }
@@ -347,4 +358,55 @@ button.active {
   border-bottom: none;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   color: $dark-background;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .sign-in-page {
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 15px;
+      margin-top: 5%;
+    }
+    button {
+      font-size: 15px;
+    }
+  }
+
+  #ballWrapper {
+    position: absolute;
+    left: 47%;
+    top: 45%;
+  }
+
+  nav button {
+    font-size: 20px;
+  }
+  
+  .sign-out {
+    font-size: 15px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+  }
+
+  .budget-field {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .submit-budget {
+    font-size: 15px;
+  }
+
+  .user-budget {
+    font-size: 20px;
+    margin-left: 25%;
+  }
+
+  .pending-game, .pending-wager, .completed-game, .completed-wagers {
+    font-size: 15px;
+  }
 }
