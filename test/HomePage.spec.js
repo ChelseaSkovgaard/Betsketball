@@ -6,11 +6,17 @@ import HomePage from '../lib/components/HomePage'
 const sinon = require('sinon')
 
 describe('HomePage', () => {
-  it.skip('can mount with no properties', () => {
+  let user ={
+    displayName: 'mike',
+    uid:3
+  }
+  it('can mount with no properties', () => {
+    let user = sinon.spy()
     const wrapper = shallow(<HomePage user={user} />)
   })
-  it.skip('renders as a <h2>', () => {
-    const wrapper = shallow(<HomePage  />)
-    assert.equal(wrapper.type(), 'h2')
+  it('renders as a <div>', () => {
+    let displayName = {displayName: 'testUser' }
+    const wrapper = shallow(<HomePage user={user} />)
+    assert.equal(wrapper.type(), 'div')
   })
 })
