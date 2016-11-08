@@ -1,0 +1,79 @@
+@import 'variables.scss';
+
+.home-page {
+  margin-bottom: 10px;
+}
+
+.home-page {
+  background-color: $lighter-background;
+  color: white;
+  section{
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+  }
+  h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  p {
+    padding-bottom: 10px;
+  }
+}
+
+.welcome-message {
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.home article.won {
+  color: #49E20E;
+}
+
+.home article.lost {
+  color: #FF5333;
+}
+
+.budget-field {
+  font-size: 15px;
+  margin-left: 10%;
+  padding: 10px;
+}
+
+.submit-budget {
+  background-color: $hightlight-color-two;
+  color: $dark-background;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 10px;
+  &:hover {
+    background-color: $highlight-color-one;
+  }
+  &:disabled:hover {
+    cursor: not-allowed;
+  }
+}
+
+#deposit {
+  margin-bottom: 10px;
+}
+
+#gamefeed-container{
+  background-color: $dark-background;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+  display: flex;
+  margin-bottom: 10px;
+  h3 {
+    margin-left: 5%;
+  }
+  .completed-wagers, .gamefeed-games {
+    display: flex;
+    flex-direction: column;
+    .won, .lost, .gamefeed-game {
+      height: 100px;
+      text-align: center;
+    }
+  }
+}

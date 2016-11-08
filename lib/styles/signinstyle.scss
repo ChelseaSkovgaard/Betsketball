@@ -1,0 +1,36 @@
+@import 'variables.scss';
+
+.sign-in-page {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  h1 {
+    color: $highlight-color-one;
+    font-size: 55px;
+    font-weight: bold;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+  }
+  h2 {
+    color: $hightlight-color-two;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 25%;
+    text-align: center;
+  }
+  button {
+    background-color: darkgreen;
+    color: white;
+    font-size: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+  }
+}
+
+.bet-title-slice {
+  color: white;
+}
