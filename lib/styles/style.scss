@@ -210,6 +210,9 @@ nav {
       padding-bottom: 10px;
     }
 }
+#deposit {
+  margin-bottom: 10px;
+}
 
 .budget-field {
   margin-left: 10%;
@@ -226,6 +229,9 @@ nav {
   font-weight: bold;
   &:hover {
     background-color: $highlight-color-one;
+  }
+  &:disabled:hover {
+    cursor: not-allowed;
   }
 }
 
@@ -259,7 +265,7 @@ nav {
       width: 50%;
       flex-direction: column;
       .pending-game, .won, .lost, .pending-wager, .completed-game {
-        height: 100px;
+        height: 120px;
         text-align: center;
       }
     }
