@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+.wallet-page {
+  background-color: $lighter-background;
+  color: white;
+    section{
+      margin-left: 10%;
+      margin-right: 10%;
+      padding-top: 2%;
+    }
+    h2 {
+      padding-bottom: 10px;
+      font-size: 30px;
+    }
+    h3 {
+      padding-bottom: 10px;
+    }
+    #pending-container, #completed-container {
+      background-color: white;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      color: $dark-background;
+      display: flex;
+    }
+    #pending-container {
+      margin-bottom: 20px;
+    }
+    .pending-games, .pending-wagers, .completed-wagers, .completed-games {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      .pending-game, .won, .lost, .pending-wager, .completed-game {
+        height: 120px;
+        text-align: center;
+      }
+    }
+    .won {
+      color: darkgreen;
+    }
+    .lost {
+      color: #c0392b;
+    }
+}
