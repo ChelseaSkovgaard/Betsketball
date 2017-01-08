@@ -1,15 +1,8 @@
-# fire-bae
-To install the dependencies:
+#Betsketball
 
-`npm install`
+###Description
 
-To fire up a development server:
+Welcome to the codebase of the Betsketball application. This application enables the user to track their bets on basketball games, seeing how much they have wagered, how much they have won/loss, and upcoming games. Users can also view the bets of other users. The application is built with React and Sass. Webpack is used to organize and compile the code. Testing was done using Mocha and Chai. 
 
-`npm start`
-
-Once the server is running, you can visit:
-
-http://localhost:8080/webpack-dev-server/ to run your application.
-http://localhost:8080/webpack-dev-server/test.html to run your test suite in the browser.
-
-Make sure to `firebase init` and wireup firebase for your app.
+###To Use The App
+Visit https://budgetly-e57bf.firebaseapp.com/?
